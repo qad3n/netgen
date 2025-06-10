@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cmake -S . -B out -DCMAKE_BUILD_TYPE=${1:-Release}
+cmake --build out --parallel "16"
