@@ -40,7 +40,7 @@ void openSocket(void);
 
 int getMAC (const char *iface, uint8_t mac[6]);
 int setMAC (const char *iface, const uint8_t mac[6]);
-int ifaceState(const char *iface, int up);
+int iFaceState (const char *iface, int up);
 
 void genMAC (uint8_t mac[6]);
 void genHEX (char *dst, size_t n);
@@ -49,7 +49,7 @@ void genHost (char *dst);
 void msleep(unsigned ms);
 
 int runCMD (const char *cmd, char *buf, size_t len);
-int getiFace(const char *iface, char *conn, size_t len);
+int getiFace (const char *iface, char *conn, size_t len);
 int getIPV4 (const char *iface, char *buf, size_t len);
 int getDHCPID (const char *iface, char *buf, size_t len);
 int renewDHCP (const char *iface, const char *dhcpHex);

@@ -57,7 +57,7 @@ int setMAC(const char *iface, const uint8_t mac[6])
 	return ioctl(ioctl_fd, SIOCSIFHWADDR, &ifr);
 }
 
-int ifaceState(const char *iface, int up)
+int iFaceState(const char *iface, int up)
 {
 	struct ifreq ifr = {0};
 	strncpy(ifr.ifr_name, iface, IFNAMSIZ - 1);
